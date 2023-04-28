@@ -1,0 +1,7 @@
+Database - HeroVired
+
+Table - RGM
+Columns - Name, College, Section, Contact Number, Address
+
+
+10 entries........
