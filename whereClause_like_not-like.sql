@@ -1,23 +1,30 @@
 use herovired;
--- Here we can see the where clause and like and not not like examples
 
-select * from gamechainger where collegeName="RGMCET";
+create table student (
+studentId int primary key not null,
+studentName varchar(30),
+studentMarks int
+);
 
-select * from gamechainger where collegeName="RGMCET" and department= "cse";
+insert into student values (1, "siva", 100),
+(2,"sai", 90), (3, "anees", 70), (4, "rohit", 80),
+(5, "anik", 99), (6, "shakul", 100);
 
-select * from gamechainger where studentName like "s%";
+insert into student values (7, "vinay", 60),
+(8,"yash", 80), (9, "suma", 77), (10, "jeetha", 88);
 
-select * from gamechainger where contact like "9%";
+select * from student where studentMarks =100;
 
-select * from gamechainger where studentName like "%l";
+select * from student where studentMarks <70;
 
-select * from gamechainger where studentName like "%i";
-
-select * from gamechainger where studentName like "_k%";
-
-select * from gamechainger where studentName not like "s%";
-
-select * from gamechainger where studentId not like "2009%" and currentSemester="5th" and contact like "9%";
+select * from student where studentMarks!=100;
+select * from student where studentMarks <> 100;
 
 
-select * from gamechainger;
+select * from student where studentMarks between 70 and 100;
+
+select * from student where studentMarks between 70 and 100 order by studentMarks;  -- deflault assending order
+select * from student where studentMarks between 70 and 100 order by studentMarks asc;
+select * from student where studentMarks between 70 and 100 order by studentMarks desc;
+
+select * from student;
