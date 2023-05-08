@@ -11,7 +11,7 @@ insert into student values (1, "siva", 100),
 (5, "anik", 99), (6, "shakul", 100);
 
 insert into student values (7, "vinay", 60),
-(8,"yash", 80), (9, "suma", 77), (10, "jeetha", 88);
+(8,"yash", 80), (9, "suma", visittest77), (10, "jeetha", 88);
 
 select * from student where studentMarks =100;
 
